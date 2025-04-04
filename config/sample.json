@@ -1,0 +1,33 @@
+{
+  "datas" : [
+    {
+      "product_name" : "OnePlus 9 Pro",
+      "quantity" : "2",
+      "email" : "patilminal322@gmail.com",
+      "shipping_method" :"Fast shipping",
+      "card_details" : {"card_number":"4242424242424242", "expiry_date": "03/26" , "cvc":"235"},
+      "card_holder_name" : "Minal Patil",
+      "country" : "India",
+      "address": "bs",
+      "city" : "Pune",
+      "pincode": "411048",
+      "state" : "Maharashtra"
+    },
+    {
+      "product_name" : "APPLE iPhone 13",
+      "quantity" : "3",
+      "email" : "demo4568@gmail.com",
+      "shipping_method" :"Free shipping",
+      "card_details" : {"card_number":"4242424242424242", "expiry_date": "03/35" , "cvc":"125"},
+      "card_holder_name" : "Damon Salvatore",
+      "country" : "Germany",
+      "address": "bs",
+      "city" : "Bremen",
+      "pincode": "985644",
+      "state" : "Berlin"
+    }
+  ]
+}
+
+
+
