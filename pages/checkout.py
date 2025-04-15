@@ -86,7 +86,7 @@ class CheckoutPayment:
         self.driver.find_element(By.TAG_NAME, "body").click()
         #click on pay button
         self.driver.find_element(*self.submit_payment_button).click()
-        wait = WebDriverWait(self.driver,10)
+        wait = WebDriverWait(self.driver,15)
         wait.until(expected_conditions.visibility_of_element_located((By.TAG_NAME, "h2")))
         message = self.driver.find_element(By.TAG_NAME, "h2").text
         print(message)
