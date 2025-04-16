@@ -19,10 +19,8 @@ def browserInstance(request):
         driver = webdriver.Edge()
     elif browser_name == "firefox" or browser_name == "Firefox":
         driver = webdriver.Firefox()
-    driver.get("https://e-commerce-updated-0993-ayhxtdzor-minal322s-projects.vercel.app/")
+    driver.get("https://e-commerce-updated-0993-311gkb9ju-minal322s-projects.vercel.app/")
     driver.maximize_window()
     driver.implicitly_wait(5)
     yield driver
     driver.close()
-
-
