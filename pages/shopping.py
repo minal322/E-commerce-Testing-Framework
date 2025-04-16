@@ -8,6 +8,7 @@ class ShopProducts:
         self.each_product = (By.CSS_SELECTOR, "p[class='product-name']")
         self.increment_quantity= (By.CSS_SELECTOR, "p span[class='plus']")
         self.add_to_cart_button = (By.CSS_SELECTOR, ".add-to-cart")
+        self.home_page_link = (By.LINK_TEXT,"Headphones And Mobiles")
 
     def select_product(self,product_name):
         # Inputs from user
@@ -25,7 +26,6 @@ class ShopProducts:
                 break
 
 
-
     def add_product_to_cart(self,quantity):
         # Select two quantity of mobiles
         for i in range(0, quantity):
@@ -33,3 +33,6 @@ class ShopProducts:
             self.driver.find_element(*self.increment_quantity).click()
         # Add to cart
         self.driver.find_element(*self.add_to_cart_button).click()
+
+    def go_to_home(self):
+        self.driver.find_element(*self.home_page_link).click()
