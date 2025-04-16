@@ -43,7 +43,7 @@ class CheckoutPayment:
             self.driver.find_element(*self.fast_shipping_mode).click()
             ship_amount = self.driver.find_element(By.XPATH,"//div[@class='ShippingSelector-price']/span[.='₹60.00']").text
             print(shipping_method)
-            print(ship_amount)
+        
         elif "Free" in shipping_method or "free" in shipping_method:
             #//label[contains(@aria-label,'Free Shipping')]
             self.driver.find_element(*self.free_shipping_mode).click()
